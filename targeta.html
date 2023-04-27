@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>Pago por tarjeta de Credito o Debito</h1>
+<form action="compra.html" method="POST">
+		<label for="nombre-tarjeta">Nombre en la tarjeta:</label>
+		<input type="text" id="nombre-tarjeta" name="nombre-tarjeta" required>
+	<label for="numero-tarjeta">Número de tarjeta:</label>
+	<input type="number" id="numero-tarjeta" name="numero-tarjeta" required>
+	
+	<label for="fecha-expiracion">Fecha de expiración:</label>
+	<input type="month" id="fecha-expiracion" name="fecha-expiracion" required>
+	
+	<label for="cvv">CVV:</label>
+	<input type="number" id="cvv" name="cvv" required>
+	
+	<label for="monto">Monto a pagar:</label>
+	<input type="number" id="monto" name="monto" required>
+	
+	<input type="submit" value="Pagar">
+</form>
+<style> 
+ body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }	
+form {
+max-width: 500px;
+margin: 0 auto;
+font-family: Arial, sans-serif;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="month"],
+select,
+textarea {
+display: block;
+width: 100%;
+padding: 8px;
+margin-bottom: 10px;
+border-radius: 4px;
+border: 1px solid #ccc;
+box-sizing: border-box;
+font-size: 16px;
+font-family: inherit;
+color: #555;
+}
+
+select {
+height: 38px;
+}
+
+input[type="submit"] {
+background-color: #4CAF50;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+font-weight: bold;
+transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+background-color: #3e8e41;
+}
+h1{
+  text-align: center;
+  font-size: 75px;
+}
+	</style>
+</body>
+</html>
